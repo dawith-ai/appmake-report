@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>appmake 공개 보고서</title>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", sans-serif; background: #F7F8FA; color: #191F28; line-height: 1.65; }
+  main { max-width: 1040px; margin: 0 auto; padding: 32px 20px 56px; }
+  header { margin-bottom: 24px; }
+  h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.2; letter-spacing: 0; }
+  h2 { margin: 34px 0 12px; font-size: 20px; letter-spacing: 0; }
+  h3 { margin: 24px 0 8px; font-size: 16px; letter-spacing: 0; }
+  p { margin: 8px 0; }
+  a { color: #E85D2A; text-decoration: none; }
+  code { background: #EEF1F4; border-radius: 5px; padding: 2px 5px; font-size: 0.9em; }
+  .lede { color: #4E5968; margin: 0; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .nav a, .button { display: inline-flex; align-items: center; border-radius: 8px; background: #191F28; color: white; padding: 8px 12px; font-size: 13px; font-weight: 700; }
+  .nav a.alt, .button.alt { background: #FF6B35; }
+  section { background: white; border: 1px solid #E5E8EB; border-radius: 8px; padding: 22px; margin: 14px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card { background: #F9FAFB; border: 1px solid #E5E8EB; border-radius: 8px; padding: 16px; }
+  .card strong { display: block; margin-bottom: 6px; }
+  .meta { color: #6B7280; font-size: 13px; }
+  .status { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .status th, .status td { border-bottom: 1px solid #EEF1F4; padding: 10px; text-align: left; vertical-align: top; }
+  .ok { color: #15803D; font-weight: 800; }
+  .todo { color: #B45309; font-weight: 800; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+  figure { margin: 0; }
+  img { width: 100%; border: 1px solid #E5E8EB; border-radius: 8px; background: white; display: block; }
+  figcaption { font-size: 12px; color: #4E5968; margin-top: 6px; }
+  .legal main { max-width: 820px; background: white; border: 1px solid #E5E8EB; border-radius: 8px; margin-top: 24px; }
+  @media (max-width: 640px) { h1 { font-size: 26px; } section { padding: 16px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>appmake 공개 보고서</h1>
+    <p class="lede">docu · palette 출시 준비 상태, Firebase 연결, 앱스토어 제출용 법적 페이지를 공개 URL에서 점검하기 위한 정적 보고서입니다.</p>
+    <nav class="nav">
+      <a href="#status">상태</a>
+      <a href="#screens">화면</a>
+      <a href="#legal">법적 페이지</a>
+      <a class="alt" href="https://github.com/myjun090-spec/appmake-report">GitHub</a>
+    </nav>
+  </header>
+
+  <section id="status">
+    <h2>배포 상태</h2>
+    <table class="status">
+      <tr><th>항목</th><th>docu</th><th>palette</th></tr>
+      <tr><td>Firebase 프로젝트</td><td class="ok">dawith-docu 생성</td><td class="ok">dawith-palette 생성</td></tr>
+      <tr><td>Firestore rules</td><td class="ok">배포 완료</td><td class="ok">배포 완료</td></tr>
+      <tr><td>익명 Auth 연동 코드</td><td class="ok">앱 내 연동 완료</td><td class="ok">앱 내 연동 완료</td></tr>
+      <tr><td>iOS / Android 프로젝트</td><td class="ok">생성 완료</td><td class="ok">생성 완료</td></tr>
+      <tr><td>스토어 심사</td><td class="todo">개발자 계정 등록 후 제출</td><td class="todo">개발자 계정 등록 후 제출</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>앱 요약</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>docu</strong>
+        <p class="meta">HWP/PDF/DOCX 모바일 변환·편집, 양식 PDF 생성, 서명 패드, 다크 모드.</p>
+      </div>
+      <div class="card">
+        <strong>palette</strong>
+        <p class="meta">사진에서 5색 팔레트 추출, 저장, 리캡, 공유 카드, 컬러 배틀.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <h2>화면 갤러리</h2>
+    <div class="gallery">
+  <figure>
+    <a href="preview-docu-cover-real.png"><img src="preview-docu-cover-real.png" alt="docu 온보딩" /></a>
+    <figcaption>docu · 온보딩</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-docu-editor-empty.png"><img src="preview-docu-editor-empty.png" alt="docu 문서 홈" /></a>
+    <figcaption>docu · 문서 홈</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-docu-forms-store.png"><img src="preview-docu-forms-store.png" alt="docu 양식 스토어" /></a>
+    <figcaption>docu · 양식 스토어</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-docu-template-pdf-final.png"><img src="preview-docu-template-pdf-final.png" alt="docu PDF 미리보기" /></a>
+    <figcaption>docu · PDF 미리보기</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-docu-signature-pad.png"><img src="preview-docu-signature-pad.png" alt="docu 서명 패드" /></a>
+    <figcaption>docu · 서명 패드</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-docu-dark-mode.png"><img src="preview-docu-dark-mode.png" alt="docu 다크 모드" /></a>
+    <figcaption>docu · 다크 모드</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-cover-real.png"><img src="preview-palette-cover-real.png" alt="palette 온보딩" /></a>
+    <figcaption>palette · 온보딩</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-home-menu.png"><img src="preview-palette-home-menu.png" alt="palette 홈 메뉴" /></a>
+    <figcaption>palette · 홈 메뉴</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-live-camera.png"><img src="preview-palette-live-camera.png" alt="palette 라이브 카메라" /></a>
+    <figcaption>palette · 라이브 카메라</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-result.png"><img src="preview-palette-result.png" alt="palette 색 추출 결과" /></a>
+    <figcaption>palette · 색 추출 결과</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-recap-week.png"><img src="preview-palette-recap-week.png" alt="palette 주간 리캡" /></a>
+    <figcaption>palette · 주간 리캡</figcaption>
+  </figure>
+
+  <figure>
+    <a href="preview-palette-battle-ready.png"><img src="preview-palette-battle-ready.png" alt="palette 컬러 배틀" /></a>
+    <figcaption>palette · 컬러 배틀</figcaption>
+  </figure></div>
+  </section>
+
+  <section id="legal">
+    <h2>앱스토어 제출용 법적 페이지</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>docu</strong>
+        <p><a class="button" href="docu-privacy.html">개인정보 처리방침</a></p>
+        <p><a class="button alt" href="docu-terms.html">이용약관</a></p>
+      </div>
+      <div class="card">
+        <strong>palette</strong>
+        <p><a class="button" href="palette-privacy.html">개인정보 처리방침</a></p>
+        <p><a class="button alt" href="palette-terms.html">이용약관</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
