@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-CXedIVs8.js","assets/index-CMR3JRHI.js","assets/index-2RM3F2W3.css","assets/dist-DYaoKJn_.js"])))=>i.map(i=>d[i]);
+import{r as e,s as t}from"./index-CMR3JRHI.js";import{a as n}from"./dist-DYaoKJn_.js";var r=t(`Purchases`,{web:()=>e(()=>import(`./web-CXedIVs8.js`).then(e=>new e.PurchasesWeb),__vite__mapDeps([0,1,2,3]))});export{n as LOG_LEVEL,r as Purchases};
