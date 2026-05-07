@@ -1,47 +1,23 @@
 {
+  "name": "Docu — 가방 속 한컴 오피스",
+  "short_name": "Docu",
+  "description": "HWP·PDF·DOCX를 폰에서 열고 서명·변환. 한국 사무·복지 양식 즉시 PDF.",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#FFF7F2",
+  "theme_color": "#FF6B35",
+  "categories": ["productivity", "business", "utilities"],
   "icons": [
-    {
-      "src": "../icons/icon-48.webp",
-      "type": "image/png",
-      "sizes": "48x48",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-72.webp",
-      "type": "image/png",
-      "sizes": "72x72",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-96.webp",
-      "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-128.webp",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-192.webp",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-256.webp",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "../icons/icon-512.webp",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
-    }
+    { "src": "icons/icon-48.webp",  "type": "image/webp", "sizes": "48x48",   "purpose": "any" },
+    { "src": "icons/icon-72.webp",  "type": "image/webp", "sizes": "72x72",   "purpose": "any" },
+    { "src": "icons/icon-96.webp",  "type": "image/webp", "sizes": "96x96",   "purpose": "any" },
+    { "src": "icons/icon-128.webp", "type": "image/webp", "sizes": "128x128", "purpose": "any" },
+    { "src": "icons/icon-192.webp", "type": "image/webp", "sizes": "192x192", "purpose": "any maskable" },
+    { "src": "icons/icon-256.webp", "type": "image/webp", "sizes": "256x256", "purpose": "any" },
+    { "src": "icons/icon-512.webp", "type": "image/webp", "sizes": "512x512", "purpose": "any maskable" }
   ]
 }
